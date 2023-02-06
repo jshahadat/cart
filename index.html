@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lauv</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" Crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/store.js" async></script>
+
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #featured>div.row.mx-auto.container>nav>ul>li.page-item.active>a {
+            background-color: coral;
+        }
+
+        #featured>div.row.mx-auto.container>nav>ul>li:nth-child(n):hover>a {
+            background-color: slateblue;
+            color: #fff;
+        }
+
+        .pagination a {
+            color: #000;
+            ;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <!-- Start Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-3 fixed-top">
+        <div class="container">
+            <a><img src="images/logo1.png" alt="logo" height="auto" width="135px" /></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active ">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Group.html">Group Purchases</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">F.A.Q</a>
+                    </li>
+
+                    <li class="cart">
+                        <!--i class="fal fa-search"></i-->
+                        <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
+                        <iron-icon name="basket"></iron-icon><span style="color: lightgrey"><b>0</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Nav-->
+
+    <!--Add speace between nave and Carousel-->
+    <div class="row py-5"></div>
+
+    <!--Start Carousel-->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" align="center">
+                            <img class="d-block w-100" src="images/Carousel/main.image.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" align="center">
+                            <img class="d-block w-100" src="images/Carousel/lg1.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="color: black"><b>coming soon</b></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" align="center">
+                            <img class="d-block w-100" src="images/Carousel/S128.Drone.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><b>coming soon</b></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" align="center">
+                            <img class="d-block w-100" src="images/Carousel/mini.speaker.C7.jpg" alt="forth slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="color: black"><b>coming soon</b></h5>
+                                <p></p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" align="center">
+                            <img class="d-block w-100" src="images/Carousel/Gun.spine.jpg" alt="fith slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="color: white"><b>coming soon</b></h>
+                                    <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" align="center">
+                            <img class="d-block w-100" src="images/Carousel/Scooter.jpg" alt="sixth slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><b>coming soon</b></h5>
+                                <p></p>
+
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!--/div>
+  <hr>
+</div>
+<div class="container">
+  <div class="row">
+	<div class="col-4">
+	  <div class="row">
+		<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
+		<div class="col-lg-6 col-10 ml-1">
+		  <h4>Free Shipping</h4>
+		</div>
+	  </div>
+	</div>
+	<div class="col-4">
+	  <div class="row">
+		<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
+		<div class="col-lg-6 col-10 ml-1">
+		  <h4>Free Returns</h4>
+		</div>
+	  </div>
+	</div>
+	<div class="col-4">
+	  <div class="row">
+		<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
+		<div class="col-lg-6 col-10 ml-1">
+		  <h4>Low Prices</h4>
+		</div-->
+            </div>
+        </div>
+    </div>
+    <P></P>
+    <h2 class="text-center">RECOMMENDED PRODUCTS</h2>
+    <P></P>
+    <!--End Carousel-->
+
+    <!--1st line bar-->
+
+    <section id="featured">
+        <div class="container text-center mt-5 py-5">
+            <h3>Lauv is SHOPPING RETAIL</h3>
+            <hr class="new2 mx-auto">
+        </div>
+
+        <!--Shop list 1-->
+        <section id="featured" class="my-5 pb-5">
+            <div class="container text-center">
+
+
+                <div id="ln1bt1" class="row mx-auto container-fluid">
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3" src="images/LB6.jpg" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Video Security Camera Light Bulb</h5>
+                        <h4 class="p-price"><s>Retail Price $49 USD</s></h4>
+                        <h4>Sales Price $44 USD 10% OFF</h4>
+                        <button class="btn-1 cart1"><a
+                                href="images/Sales products/Jennifer Yin - Led Lgt Bulb/splb.html">Product
+                                Details</a></button>
+                    </div>
+
+                    <div id="ln1bt2" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3" src="images/D1.webp" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Mini Drone</h5>
+                        <h4 class="p-price"><s>Retail Price $95.02 USD</s></h4>
+                        <h4>Sales Price $86 USD 10% OFF</h4>
+                        <button class="btn-1 cart2"><a
+                                href="images/Sales products/Mrs.haiying liu - Drone/sp128.html">Product
+                                Details</a></button>
+                    </div>
+
+                    <div id="ln1bt3" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3" src="images/Mini Speaker on hand.png" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">2 Mini Speaker</h5>
+                        <h4 class="p-price"><s>Retail Price $69.99 USD</s></h4>
+                        <h4>Sales Price $63 USD 10% OFF</h4>
+                        <button class="btn-1 cart3">coming Soon</button>
+                    </div>
+
+                    <div id="ln1bt4" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3" src="images/MGun.webp" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Massage Gun</h5>
+                        <h4 class="p-price"><s>Retail Price $89.99 USD</s></h4>
+                        <h4>Sales Price $81 USD 10% OFF</h4>
+                        <button class="btn-1 cart4">Coming Soon</button>
+                    </div>
+                </div>
+        </section>
+
+        <!--2nd Line Brake-->
+        <section id="featured" class="my-5 pb-5">
+            <div class="container text-center mt-5 py-5">
+                <h3>Lauv at first sight</h3>
+                <hr class="new2 mx-auto">
+            </div>
+
+            <!--2nd line-->
+            <section id="watches" class="my-5">
+                <div class="container text-center mt-5 py-5">
+                </div>
+                <div id="ln1bt5" class="row mx-auto container-fluid">
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3"
+                            src="images/Sales products/ELLIAN LI HS-04Pro Scooter/HS-04Pro Size.webp" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Scooter</h5>
+                        <h4 class="p-price"><s>Retail Price $798.99 USD</s></h4>
+                        <h4>Sales Price $695 USD 12% OFF</h4>
+                        <button class="btn-1 cart5">Coming Soon</button>
+                    </div>
+
+                    <div id="ln1bt6" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3"
+                            src="images/Sales products/Christina Xu - Fascia Massage Gun/Wireless Charger Lamp/Wireless Charger Lamp.webp"
+                            alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Wireless Charger Lamp</h5>
+                        <h4 class="p-price"><s>Retail Price $81.89 USD</s></h4>
+                        <h4>Sales Price $74 USD 10% OFF</h4>
+                        <button class="btn-1 cart6">Coming Soon</button>
+                    </div>
+
+                    <div id="ln1bt7" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3" src="images/coming-soon.webp" alt="">
+                        <!--div class="star">
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+		</div>
+		<h5 class="p-name">Sport Boots</h5>
+		<h4 class="p-price">$92.00</h4>
+		<button class="buy-btn">Buy Now</button-->
+                    </div>
+
+                    <div id="ln1bt8" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid mb-3" src="images/coming-soon.webp" alt="">
+                        <!--div class="star">
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+			 <i class="fas fa-star"></i>
+		</div>
+		<h5 class="p-name">Sport Boots</h5>
+		<h4 class="p-price">$92.00</h4>
+		<button class="buy-btn">Buy Now</button-->
+                    </div>
+                </div>
+            </section>
+
+            <!--3nd Line Brake-->
+            <section id="featured" class="my-5 pb-5">
+                <div class="container text-center mt-5 py-5">
+                    <h3>Lauv is getting a good Deal</h3>
+                    <hr class="new2 mx-auto">
+                </div>
+
+                <!-- Start pagination-->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination mt-5">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link">1</a></li>
+                        <li class="page-item"><a class="page-link" href="Group.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="About.html">3</a></li>
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End pagination-->
+
+
+                <footer class="Navbar navbar-expand-lg navbar-dark bg-secondary">
+                    <div class="row container mx-auto ">
+                        <div class="footer-one ">
+                            <img src="images/logo2.png" alt="logo" height="auto" width="80px">
+                            <p class="pt-3">Make Lauv NOT War</p>
+
+                        </div>
+
+                        <!--div class="col-lg-4 col-md-6 col-12">
+				
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			</div-->
+
+                        <!--div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h5 class="pb-2">Featured</h5>
+				<ul class="text-uppercase list-unstyled">
+					<li><a href="#">man</a></li>
+					<li><a href="#">woman</a></li>
+					<li><a href="#">boys</a></li>
+					<li><a href="#">girls</a></li>
+					<li><a href="#">new arrivals</a></li>
+					<li><a href="#">shoes</a></li>
+					<li><a href="#">clothes</a></li>
+				</ul>
+			</div-->
+
+                        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                            <h5 class="pb-2">Contact Us</h5>
+                            <!--div>
+					<h6 class="text-uppercase">Address</h6>
+					<p>123 Street Name, City, US</p>
+				</div>
+				<div>
+					<h6 class="text-uppercase">Phone</h6>
+					<p>12345-6789-10</p>
+				</div-->
+                            <div>
+                                <h5>EMAIL</h5>
+                                <p>Makelauv@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!--div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h5 class="pb-2">Instagram</h5>
+			<div class="row">
+				<img class="img-fluid w-25 h-100 m-2" src="insta/1.jpg" alt="">
+				<img class="img-fluid w-25 h-100 m-2" src="insta/2.jpg" alt="">
+				<img class="img-fluid w-25 h-100 m-2" src="insta/3.jpg" alt="">
+				<img class="img-fluid w-25 h-100 m-2" src="insta/4.jpg" alt="">
+				<img class="img-fluid w-25 h-100 m-2" src="insta/5.jpg" alt="">
+			</div>	
+		  </div-->
+
+
+                        <div class="copyright">
+                            <div class="row container mx-auto">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <img src="#" alt="">
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <p>copyright Lauv © 2007.<br> All Rights Reserved</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="js/jquery-3.4.1.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap-4.4.1.js"></script>
+
+                <!--script>
+        var MainImg = document.getElementById('MainImg');
+        var samllimg = document.getElementsByClassName('small-img');
+
+        samllimg[0].onclick = function(){
+            MainImg.src = samllimg[0].src;
+		}
+        samllimg[1].onclick = function(){
+            MainImg.src = samllimg[1].src;
+        }
+        samllimg[2].onclick = function(){
+            MainImg.src = samllimg[2].src;
+        }
+        samllimg[3].onclick = function(){
+            MainImg.src = samllimg[3].src;
+        }
+	
+    </script-->
+
+
+                <script src="js/main.js"></script>
+</body>
+
+</html>
+<!--https://www.youtube.com/watch?v=Mr7eWzGyq3E&t=0s @54:02-->

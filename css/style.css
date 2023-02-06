@@ -1,0 +1,481 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+h6 {
+    color: #d8d8d8;
+}
+
+input[type='number'] {
+    width: 150px;
+}
+
+.btn {
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #000000;
+    /*btn background-color*/
+    color: #fb774b;
+    /*btn text-color*/
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-1:hover {
+    background-color: #818181;
+}
+
+.btn-2 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #000000;
+    /*btn background-color*/
+    color: #fb774b;
+    /*btn text-color*/
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-2:hover {
+    background-color: #FFD700;
+}
+
+
+/* GoldS line bar1 */
+hr.new1 {
+    width: 1000px;
+    height: 20px;
+    background-color: #FFD700;
+}
+
+/* lightgray line bar2 */
+hr.new2 {
+    width: 1000px;
+    height: 20px;
+    background-color: #636363;
+}
+
+.star {
+    padding: 10px 0;
+}
+
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black(61, 61, 61);
+    transition: 0.3s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-expand-lg .navbar-nav .nav-link.active,
+.navbar i.act {
+    color: coral;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#bar {
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#bar:hover,
+#bar.active {
+    color: royalblue;
+}
+
+@media only screen and (max-width: 991px) {
+
+    body>nav>div>button:hover,
+    body>nav>div>button:focus {
+        background-color: #fb774b;
+    }
+
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar {
+        color: #fff;
+    }
+
+    #navbarSupportedContent>ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 10px 0;
+    }
+}
+
+
+/*moble Nav*/
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+
+
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+.product .buy-btn {
+    background-color: #000000;
+    /*btn background-color*/
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#banner {
+    background-image: url("../images/faq.jpg");
+    widows: 100%;
+    height: 240vh;
+    background-size: cover;
+    background-position: top 60px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h4 {
+    color: #d8d8d8;
+}
+
+#banner h1 {
+    color: #fff;
+}
+
+#banner button {
+    background-color: #fb774b;
+}
+
+
+
+.container,
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #FFFF00;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    Font-size: 50px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    background: #c6c6c6;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+}
+
+.container .box-container .box img {
+    width: 20px;
+    height: 20px;
+    background-size: 15px 15px 0 0;
+}
+
+.container .box:hover {
+    filter: grayscale(0);
+}
+
+.container .box-container .box video {
+    width: 300px;
+    height: 200px;
+    background-size: 15px 15px 0 0;
+}
+
+.container .box-container .box h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px, 0;
+}
+
+.container .box-container .box h3 {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #0097FF;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover {
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    background-color: lightslategrey;
+}
+
+/*box2 container*/
+
+.container .box-container .box2 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    background: #c6c6c6;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+}
+
+.container .box-container .box2 img {
+    width: auto;
+    height: 240px;
+    background-size: 15px 15px 0 0;
+}
+
+.container .box2:hover {
+    filter: grayscale(0);
+}
+
+.container .box-container .box2 video {
+    width: 300px;
+    height: 240px;
+    background-size: 15px 15px 0 0;
+}
+
+.container .box2-container .box2 h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px, 0;
+}
+
+.container .box-container .box2 h3 {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box2 .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box2 .btn:hover {
+    letter-spacing: 1px;
+}
+
+.container .box-container .box2:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    background-color: lightgreen;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: darkgray;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+/*-------------Cart Page-------------*/
+
+.products-container {
+    margin: 0, auto;
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.products-container ion-icon {
+    color: blue;
+}
+
+.product-header {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.product-title {
+    padding: 0 100px;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    padding: 0 100px;
+    width: 15%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 4px solid lightgray;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.total {
+    width: 15%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.cart-container {
+    width: 80%;
+    height: 100px;
+    margin: 20px auto;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+
+/*this code sqwishess the home
+.product{
+	width: 10%;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 4px solid lightgray;
+	align-items: center;
+	padding-bottom: 10px 0;
+}*/
+
+
+
+
+
+
+
+
+/*https://www.youtube.com/watch?v=ZPb10kOQv0c&t=18s
+		
+		Not: left of at 3:56-->
+	<!--https://www.youtube.com/watch?v=qXRYMdvq_Dc&t=14s-->*/
